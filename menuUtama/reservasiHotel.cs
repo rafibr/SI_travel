@@ -51,8 +51,6 @@ namespace menuUtama
                 panel3.Height = vScrollBar1.Value;
             panel4.Height = vScrollBar1.Value;
             panel5.Height = vScrollBar1.Value;
-            panel6.Height = vScrollBar1.Value;
-            panel7.Height = vScrollBar1.Value;
         }
 
         private void buttonHome_Click(object sender, EventArgs e)

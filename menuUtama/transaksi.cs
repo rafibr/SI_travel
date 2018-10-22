@@ -20,7 +20,6 @@ namespace menuUtama
 
         Color oldColor;
         Color newColor = Color.FromArgb(0, Color.MediumAquamarine);  // your pick, including Black
-        int alpha = 0;
 
 
 
