@@ -71,6 +71,18 @@
     <Compile Include="changepass.Designer.cs">
       <DependentUpon>changepass.cs</DependentUpon>
     </Compile>
+    <Compile Include="homeAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="homeAdmin.Designer.cs">
+      <DependentUpon>homeAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loginAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loginAdmin.Designer.cs">
+      <DependentUpon>loginAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="profile.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,6 +146,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="changepass.resx">
       <DependentUpon>changepass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="homeAdmin.resx">
+      <DependentUpon>homeAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loginAdmin.resx">
+      <DependentUpon>loginAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="profile.resx">
       <DependentUpon>profile.cs</DependentUpon>
