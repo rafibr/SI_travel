@@ -76,7 +76,6 @@
             this.panelLeft.Name = "panelLeft";
             this.panelLeft.Size = new System.Drawing.Size(10, 74);
             this.panelLeft.TabIndex = 6;
-            this.panelLeft.Paint += new System.Windows.Forms.PaintEventHandler(this.panelLeft_Paint);
             // 
             // panel3
             // 
@@ -103,11 +102,11 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Showcard Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(42, 107);
+            this.label9.Location = new System.Drawing.Point(70, 102);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(117, 14);
+            this.label9.Size = new System.Drawing.Size(58, 14);
             this.label9.TabIndex = 10;
-            this.label9.Text = "Muhammad Ibnu M.";
+            this.label9.Text = "IbnuKun";
             // 
             // panel1
             // 
@@ -357,7 +356,6 @@
             this.label6.Size = new System.Drawing.Size(67, 23);
             this.label6.TabIndex = 32;
             this.label6.Text = "Team 2";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // about
             // 

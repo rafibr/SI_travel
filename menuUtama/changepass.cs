@@ -18,9 +18,19 @@ namespace menuUtama
 
         private void button1_Click(object sender, EventArgs e)
         {
-            home f2 = new home();
-            f2.Show();
-            this.Hide();
+            
+
+            DialogResult dialogResult = MessageBox.Show("Yakin ingin mengubah password ?", "Confirmation", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                //code yes goes here
+                this.Close();
+            }
+            else if (dialogResult == DialogResult.No)
+            {
+                //code no goes here
+            }
+
         }
     }
 }

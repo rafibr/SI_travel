@@ -18,7 +18,7 @@ namespace menuUtama
 
         private void button1_Click(object sender, EventArgs e)
         {
-            home f2 = new home();
+            homeAdmin f2 = new homeAdmin();
             f2.Show();
             this.Hide();
         }

@@ -77,11 +77,9 @@ namespace menuUtama
             panelLeft.Height = buttonAbout.Height;
             panelLeft.Top = buttonAbout.Top;
 
-
-        }
-
-        private void panelLeft_Paint(object sender, PaintEventArgs e)
-        {
+            about f2 = new about();
+            f2.Show();
+            this.Hide();
 
         }
 
@@ -144,14 +142,9 @@ namespace menuUtama
 
         private void buttonProfile_Click(object sender, EventArgs e)
         {
-            pesawat f2 = new pesawat();
+            profile f2 = new profile();
             f2.Show();
             this.Hide();
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

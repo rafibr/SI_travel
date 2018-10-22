@@ -170,6 +170,7 @@
             this.label5.Size = new System.Drawing.Size(87, 19);
             this.label5.TabIndex = 10;
             this.label5.Text = "Admin Login";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // login
             // 

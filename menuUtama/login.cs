@@ -22,5 +22,12 @@ namespace menuUtama
             f2.Show();
             this.Hide();
         }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            loginAdmin f2 = new loginAdmin();
+            f2.Show();
+            this.Hide();
+        }
     }
 }
