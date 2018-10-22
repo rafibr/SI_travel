@@ -51,7 +51,6 @@
             this.buttonTiket = new System.Windows.Forms.Button();
             this.buttonHome = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label21 = new System.Windows.Forms.Label();
             this.buttonMin = new System.Windows.Forms.Button();
             this.buttonMax = new System.Windows.Forms.Button();
             this.buttonClose = new System.Windows.Forms.Button();
@@ -360,7 +359,6 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(219)))), ((int)(((byte)(220)))));
-            this.panel2.Controls.Add(this.label21);
             this.panel2.Controls.Add(this.buttonMin);
             this.panel2.Controls.Add(this.buttonMax);
             this.panel2.Controls.Add(this.buttonClose);
@@ -368,18 +366,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(600, 29);
             this.panel2.TabIndex = 22;
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label21.Font = new System.Drawing.Font("Showcard Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.ForeColor = System.Drawing.Color.SteelBlue;
-            this.label21.Location = new System.Drawing.Point(3, 8);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(50, 14);
-            this.label21.TabIndex = 11;
-            this.label21.Text = "Logout";
             // 
             // buttonMin
             // 
@@ -880,7 +866,6 @@
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
@@ -960,7 +945,6 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.Label label21;
     }
 }
 
