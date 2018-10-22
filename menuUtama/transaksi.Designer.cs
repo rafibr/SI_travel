@@ -38,26 +38,26 @@
             this.label1 = new System.Windows.Forms.Label();
             this.asalBox = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.buttonHotel = new System.Windows.Forms.Button();
             this.panelLeft = new System.Windows.Forms.Panel();
+            this.buttonAbout = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.buttonProfile = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.buttonTransaksi = new System.Windows.Forms.Button();
+            this.buttonTiket = new System.Windows.Forms.Button();
+            this.buttonHome = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.buttonMin = new System.Windows.Forms.Button();
             this.buttonMax = new System.Windows.Forms.Button();
             this.buttonClose = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.buttonAbout = new System.Windows.Forms.Button();
-            this.buttonProfile = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.buttonTransaksi = new System.Windows.Forms.Button();
-            this.buttonReservasi = new System.Windows.Forms.Button();
-            this.buttonHome = new System.Windows.Forms.Button();
             this.roundButton1 = new RoundButton.RoundButton();
             this.roundButton2 = new RoundButton.RoundButton();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // kd_pesawat
@@ -142,18 +142,35 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(219)))), ((int)(((byte)(220)))));
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.buttonHotel);
             this.panel1.Controls.Add(this.panelLeft);
             this.panel1.Controls.Add(this.buttonAbout);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.buttonTransaksi);
-            this.panel1.Controls.Add(this.buttonReservasi);
+            this.panel1.Controls.Add(this.buttonTiket);
             this.panel1.Controls.Add(this.buttonHome);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 600);
             this.panel1.TabIndex = 21;
+            // 
+            // buttonHotel
+            // 
+            this.buttonHotel.BackColor = System.Drawing.Color.Transparent;
+            this.buttonHotel.FlatAppearance.BorderSize = 0;
+            this.buttonHotel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonHotel.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonHotel.Image = global::menuUtama.Properties.Resources.hotelicon;
+            this.buttonHotel.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.buttonHotel.Location = new System.Drawing.Point(3, 285);
+            this.buttonHotel.Name = "buttonHotel";
+            this.buttonHotel.Size = new System.Drawing.Size(194, 74);
+            this.buttonHotel.TabIndex = 8;
+            this.buttonHotel.Text = "Cek Kamar Hotel";
+            this.buttonHotel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.buttonHotel.UseVisualStyleBackColor = false;
+            this.buttonHotel.Click += new System.EventHandler(this.button1_Click_2);
             // 
             // panelLeft
             // 
@@ -162,6 +179,23 @@
             this.panelLeft.Name = "panelLeft";
             this.panelLeft.Size = new System.Drawing.Size(10, 74);
             this.panelLeft.TabIndex = 6;
+            // 
+            // buttonAbout
+            // 
+            this.buttonAbout.BackColor = System.Drawing.Color.Transparent;
+            this.buttonAbout.FlatAppearance.BorderSize = 0;
+            this.buttonAbout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonAbout.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAbout.Image = ((System.Drawing.Image)(resources.GetObject("buttonAbout.Image")));
+            this.buttonAbout.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.buttonAbout.Location = new System.Drawing.Point(3, 439);
+            this.buttonAbout.Name = "buttonAbout";
+            this.buttonAbout.Size = new System.Drawing.Size(194, 74);
+            this.buttonAbout.TabIndex = 6;
+            this.buttonAbout.Text = "About";
+            this.buttonAbout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.buttonAbout.UseVisualStyleBackColor = false;
+            this.buttonAbout.Click += new System.EventHandler(this.buttonAbout_Click);
             // 
             // panel3
             // 
@@ -174,15 +208,88 @@
             this.panel3.Size = new System.Drawing.Size(200, 133);
             this.panel3.TabIndex = 5;
             // 
+            // buttonProfile
+            // 
+            this.buttonProfile.BackgroundImage = global::menuUtama.Properties.Resources.download__5_;
+            this.buttonProfile.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonProfile.Location = new System.Drawing.Point(50, 13);
+            this.buttonProfile.Name = "buttonProfile";
+            this.buttonProfile.Size = new System.Drawing.Size(99, 86);
+            this.buttonProfile.TabIndex = 10;
+            this.buttonProfile.UseVisualStyleBackColor = true;
+            this.buttonProfile.Click += new System.EventHandler(this.buttonProfile_Click);
+            // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Showcard Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(42, 107);
+            this.label9.Location = new System.Drawing.Point(69, 102);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(117, 14);
+            this.label9.Size = new System.Drawing.Size(58, 14);
             this.label9.TabIndex = 9;
-            this.label9.Text = "Muhammad Ibnu M.";
+            this.label9.Text = "ibnukun";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(50, 13);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(99, 86);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // buttonTransaksi
+            // 
+            this.buttonTransaksi.BackColor = System.Drawing.Color.Transparent;
+            this.buttonTransaksi.FlatAppearance.BorderSize = 0;
+            this.buttonTransaksi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonTransaksi.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTransaksi.Image = ((System.Drawing.Image)(resources.GetObject("buttonTransaksi.Image")));
+            this.buttonTransaksi.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.buttonTransaksi.Location = new System.Drawing.Point(3, 359);
+            this.buttonTransaksi.Name = "buttonTransaksi";
+            this.buttonTransaksi.Size = new System.Drawing.Size(194, 74);
+            this.buttonTransaksi.TabIndex = 3;
+            this.buttonTransaksi.Text = "Transaksi";
+            this.buttonTransaksi.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.buttonTransaksi.UseVisualStyleBackColor = false;
+            this.buttonTransaksi.Click += new System.EventHandler(this.buttonTransaksi_Click);
+            // 
+            // buttonTiket
+            // 
+            this.buttonTiket.BackColor = System.Drawing.Color.Transparent;
+            this.buttonTiket.FlatAppearance.BorderSize = 0;
+            this.buttonTiket.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonTiket.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTiket.Image = ((System.Drawing.Image)(resources.GetObject("buttonTiket.Image")));
+            this.buttonTiket.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.buttonTiket.Location = new System.Drawing.Point(3, 214);
+            this.buttonTiket.Name = "buttonTiket";
+            this.buttonTiket.Size = new System.Drawing.Size(194, 74);
+            this.buttonTiket.TabIndex = 2;
+            this.buttonTiket.Text = "Tiket Pesawat";
+            this.buttonTiket.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.buttonTiket.UseVisualStyleBackColor = false;
+            this.buttonTiket.Click += new System.EventHandler(this.buttonReservasi_Click);
+            // 
+            // buttonHome
+            // 
+            this.buttonHome.BackColor = System.Drawing.Color.Transparent;
+            this.buttonHome.FlatAppearance.BorderSize = 0;
+            this.buttonHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonHome.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonHome.Image = ((System.Drawing.Image)(resources.GetObject("buttonHome.Image")));
+            this.buttonHome.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.buttonHome.Location = new System.Drawing.Point(3, 134);
+            this.buttonHome.Name = "buttonHome";
+            this.buttonHome.Size = new System.Drawing.Size(194, 74);
+            this.buttonHome.TabIndex = 1;
+            this.buttonHome.Text = "Home";
+            this.buttonHome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.buttonHome.UseVisualStyleBackColor = false;
+            this.buttonHome.Click += new System.EventHandler(this.buttonHome_Click);
             // 
             // panel2
             // 
@@ -237,110 +344,6 @@
             this.buttonClose.UseVisualStyleBackColor = true;
             this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Image = global::menuUtama.Properties.Resources.hotelicon;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button1.Location = new System.Drawing.Point(3, 285);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(194, 74);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Cek Kamar Hotel";
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // buttonAbout
-            // 
-            this.buttonAbout.BackColor = System.Drawing.Color.Transparent;
-            this.buttonAbout.FlatAppearance.BorderSize = 0;
-            this.buttonAbout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonAbout.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAbout.Image = ((System.Drawing.Image)(resources.GetObject("buttonAbout.Image")));
-            this.buttonAbout.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.buttonAbout.Location = new System.Drawing.Point(3, 439);
-            this.buttonAbout.Name = "buttonAbout";
-            this.buttonAbout.Size = new System.Drawing.Size(194, 74);
-            this.buttonAbout.TabIndex = 6;
-            this.buttonAbout.Text = "About";
-            this.buttonAbout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.buttonAbout.UseVisualStyleBackColor = false;
-            // 
-            // buttonProfile
-            // 
-            this.buttonProfile.BackgroundImage = global::menuUtama.Properties.Resources.download__5_;
-            this.buttonProfile.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.buttonProfile.Location = new System.Drawing.Point(50, 13);
-            this.buttonProfile.Name = "buttonProfile";
-            this.buttonProfile.Size = new System.Drawing.Size(99, 86);
-            this.buttonProfile.TabIndex = 10;
-            this.buttonProfile.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(50, 13);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(99, 86);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // buttonTransaksi
-            // 
-            this.buttonTransaksi.BackColor = System.Drawing.Color.Transparent;
-            this.buttonTransaksi.FlatAppearance.BorderSize = 0;
-            this.buttonTransaksi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonTransaksi.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTransaksi.Image = ((System.Drawing.Image)(resources.GetObject("buttonTransaksi.Image")));
-            this.buttonTransaksi.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.buttonTransaksi.Location = new System.Drawing.Point(3, 359);
-            this.buttonTransaksi.Name = "buttonTransaksi";
-            this.buttonTransaksi.Size = new System.Drawing.Size(194, 74);
-            this.buttonTransaksi.TabIndex = 3;
-            this.buttonTransaksi.Text = "Transaksi";
-            this.buttonTransaksi.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.buttonTransaksi.UseVisualStyleBackColor = false;
-            this.buttonTransaksi.Click += new System.EventHandler(this.buttonTransaksi_Click);
-            // 
-            // buttonReservasi
-            // 
-            this.buttonReservasi.BackColor = System.Drawing.Color.Transparent;
-            this.buttonReservasi.FlatAppearance.BorderSize = 0;
-            this.buttonReservasi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonReservasi.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonReservasi.Image = ((System.Drawing.Image)(resources.GetObject("buttonReservasi.Image")));
-            this.buttonReservasi.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.buttonReservasi.Location = new System.Drawing.Point(3, 214);
-            this.buttonReservasi.Name = "buttonReservasi";
-            this.buttonReservasi.Size = new System.Drawing.Size(194, 74);
-            this.buttonReservasi.TabIndex = 2;
-            this.buttonReservasi.Text = "Reservasi";
-            this.buttonReservasi.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.buttonReservasi.UseVisualStyleBackColor = false;
-            this.buttonReservasi.Click += new System.EventHandler(this.buttonReservasi_Click);
-            // 
-            // buttonHome
-            // 
-            this.buttonHome.BackColor = System.Drawing.Color.Transparent;
-            this.buttonHome.FlatAppearance.BorderSize = 0;
-            this.buttonHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonHome.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonHome.Image = ((System.Drawing.Image)(resources.GetObject("buttonHome.Image")));
-            this.buttonHome.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.buttonHome.Location = new System.Drawing.Point(3, 134);
-            this.buttonHome.Name = "buttonHome";
-            this.buttonHome.Size = new System.Drawing.Size(194, 74);
-            this.buttonHome.TabIndex = 1;
-            this.buttonHome.Text = "Home";
-            this.buttonHome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.buttonHome.UseVisualStyleBackColor = false;
-            this.buttonHome.Click += new System.EventHandler(this.buttonHome_Click);
-            // 
             // roundButton1
             // 
             this.roundButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(167)))));
@@ -354,6 +357,7 @@
             this.roundButton1.TabIndex = 25;
             this.roundButton1.Text = "Pesan Tiket Pesawat";
             this.roundButton1.UseVisualStyleBackColor = false;
+            this.roundButton1.Click += new System.EventHandler(this.roundButton1_Click);
             this.roundButton1.MouseLeave += new System.EventHandler(this.roundButton1_MouseLeave);
             this.roundButton1.MouseHover += new System.EventHandler(this.roundButton1_MouseHover);
             // 
@@ -370,6 +374,7 @@
             this.roundButton2.TabIndex = 26;
             this.roundButton2.Text = "Pesan Kamar Hotel";
             this.roundButton2.UseVisualStyleBackColor = false;
+            this.roundButton2.Click += new System.EventHandler(this.roundButton2_Click);
             this.roundButton2.MouseLeave += new System.EventHandler(this.roundButton2_MouseLeave);
             this.roundButton2.MouseHover += new System.EventHandler(this.roundButton2_MouseHover);
             // 
@@ -390,8 +395,8 @@
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -413,7 +418,7 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button buttonTransaksi;
-        private System.Windows.Forms.Button buttonReservasi;
+        private System.Windows.Forms.Button buttonTiket;
         private System.Windows.Forms.Button buttonHome;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button buttonProfile;
@@ -421,7 +426,7 @@
         private System.Windows.Forms.Button buttonMin;
         private System.Windows.Forms.Button buttonMax;
         private System.Windows.Forms.Button buttonClose;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonHotel;
         private RoundButton.RoundButton roundButton1;
         private RoundButton.RoundButton roundButton2;
     }

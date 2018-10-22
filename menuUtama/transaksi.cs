@@ -15,7 +15,7 @@ namespace menuUtama
         public transaksi()
         {
             InitializeComponent();
-            oldColor = button1.BackColor;
+            oldColor = buttonHotel.BackColor;
         }
 
         Color oldColor;
@@ -46,9 +46,13 @@ namespace menuUtama
 
         private void buttonReservasi_Click(object sender, EventArgs e)
         {
-            panelLeft.Height = buttonReservasi.Height;
-            panelLeft.Top = buttonReservasi.Top;
-            
+            panelLeft.Height = buttonTiket.Height;
+            panelLeft.Top = buttonTiket.Top;
+
+            reservasiPesawat f2 = new reservasiPesawat();
+            f2.Show();
+            this.Hide();
+
         }
 
         private void button1_Click_1(object sender, EventArgs e)
@@ -58,15 +62,18 @@ namespace menuUtama
 
         private void buttonHome_Click(object sender, EventArgs e)
         {
+            panelLeft.Height = buttonHome.Height;
+            panelLeft.Top = buttonHome.Top;
+
             home f2 = new home();
             f2.Show();
-            this.Close();
+            this.Hide();
         }
 
-        private void buttonTransaksi_Click(object sender, EventArgs e)
+            private void buttonTransaksi_Click(object sender, EventArgs e)
         {
-            panelLeft.Height = buttonReservasi.Height;
-            panelLeft.Top = buttonReservasi.Top;
+            panelLeft.Height = buttonTransaksi.Height;
+            panelLeft.Top = buttonTransaksi.Top;
 
             transaksi f2 = new transaksi();
             f2.Show();
@@ -120,6 +127,48 @@ namespace menuUtama
         {
             var cc2 = System.Drawing.ColorTranslator.FromHtml("#007EA7");
             roundButton2.BackColor = cc2;
+        }
+
+        private void buttonProfile_Click(object sender, EventArgs e)
+        {
+            profile f2 = new profile();
+            f2.Show();
+            this.Hide();
+        }
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+            panelLeft.Height = buttonHotel.Height;
+            panelLeft.Top = buttonHotel.Top;
+
+            reservasiHotel f2 = new reservasiHotel();
+            f2.Show();
+            this.Hide();
+
+        }
+
+        private void buttonAbout_Click(object sender, EventArgs e)
+        {
+            panelLeft.Height = buttonAbout.Height;
+            panelLeft.Top = buttonAbout.Top;
+
+            about f2 = new about();
+            f2.Show();
+            this.Hide();
+        }
+
+        private void roundButton1_Click(object sender, EventArgs e)
+        {
+            pesawat f2 = new pesawat();
+            f2.Show();
+            this.Hide();
+        }
+
+        private void roundButton2_Click(object sender, EventArgs e)
+        {
+            hotel f2 = new hotel();
+            f2.Show();
+            this.Hide();
         }
     }
 }

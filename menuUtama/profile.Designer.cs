@@ -376,6 +376,7 @@
             this.label11.Size = new System.Drawing.Size(92, 15);
             this.label11.TabIndex = 34;
             this.label11.Text = "Ganti Password";
+            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // label12
             // 
